@@ -24,3 +24,4 @@ type bigWig
 logo on
 visibility full
 autoScale on
+alwaysZero on
