@@ -12,7 +12,9 @@ track K562_ATAC_pval_signal
 bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/pval.bigWig
 shortLabel K562 ATAC pval signal
 longLabel TODO
-type bigWig 
+type bigWig
+windowingFunction maximum
+visibility full
 
 track K562_ATAC_corrected_count_contribution_scores
 bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/merged.K562.counts.bw
@@ -20,3 +22,5 @@ shortLabel K562 ATAC corrected count contribution scores
 longLabel TODO
 type bigWig 
 logo on
+visibility full
+
