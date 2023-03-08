@@ -1,0 +1,15 @@
+hub chrombpnetK562
+shortLabel ChromBPNet K562
+longLabel TODO
+genomesFile genomes.txt
+email riyasinh@stanford.edu
+descriptionUrl TODO
+useOneFile on
+
+genome hg38
+
+track K562_ATAC_pval_signal
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/pval.bigWi
+shortLabel K562 ATAC pval signal
+longLabel TODO
+type bigWig 
