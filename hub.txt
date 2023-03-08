@@ -60,13 +60,6 @@ logo on
 autoScale on
 alwaysZero on
 
-track K562_ATAC_overlap_peak_bed
-bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/peaks.sorted.bed.gz
-shortLabel K562 ATAC overlap peak bed
-longLabel TODO
-visibility full
-type bed
-
 track K562_DNASE_pval_signal
 bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/K562.merged.filtered.sorted.pval.signal.bigwig
 shortLabel K562 DNASE pval signal
@@ -118,10 +111,3 @@ type bigWig
 logo on
 autoScale on
 alwaysZero on
-
-track K562_DNASE_overlap_peak_bed
-bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/peaks.sorted.bed.gz
-shortLabel K562 DNASE overlap peak bed
-longLabel TODO
-visibility full
-type bed
