@@ -12,16 +12,116 @@ track K562_ATAC_pval_signal
 bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/pval.bigWig
 shortLabel K562 ATAC pval signal
 longLabel TODO
+visibility full
 type bigWig
 windowingFunction maximum
+
+track K562_ATAC_observed
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/K562_unstranded.bw
+shortLabel K562 ATAC observed
+longLabel TODO
 visibility full
+type bigWig
+windowingFunction maximum
+
+track K562_ATAC_uncorrected_predictions
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/K562_w_bias.bw
+shortLabel K562 ATAC uncorrected predictions
+longLabel TODO
+visibility full
+type bigWig
+windowingFunction maximum
+
+track K562_ATAC_corrected_predictions
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/K562_wo_bias.bw
+shortLabel K562 ATAC corrected predictions
+longLabel TODO
+visibility full
+type bigWig
+windowingFunction maximum
 
 track K562_ATAC_corrected_count_contribution_scores
 bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/merged.K562.counts.bw
 shortLabel K562 ATAC corrected count contribution scores
 longLabel TODO
-type bigWig 
-logo on
 visibility full
+type bigWig
+logo on
 autoScale on
 alwaysZero on
+
+track K562_ATAC_corrected_profile_contribution_scores
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/merged.K562.profile.bw
+shortLabel K562 ATAC corrected profile contribution scores
+longLabel TODO
+visibility full
+type bigWig
+logo on
+autoScale on
+alwaysZero on
+
+track K562_ATAC_overlap_peak_bed
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/peaks.sorted.bed.gz
+shortLabel K562 ATAC overlap peak bed
+longLabel TODO
+visibility full
+type bed
+
+track K562_DNASE_pval_signal
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/K562.merged.filtered.sorted.pval.signal.bigwig
+shortLabel K562 DNASE pval signal
+longLabel TODO
+visibility full
+type bigWig
+windowingFunction maximum
+
+track K562_DNASE_observed
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/K562_unstranded.bw
+shortLabel K562 DNASE observed
+longLabel TODO
+visibility full
+type bigWig
+windowingFunction maximum
+
+track K562_DNASE_uncorrected_predictions
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/K562_w_bias.bw
+shortLabel K562 DNASE uncorrected predictions
+longLabel TODO
+visibility full
+type bigWig
+windowingFunction maximum
+
+track K562_DNASE_corrected_predictions
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/K562_wo_bias.bw
+shortLabel K562 DNASE corrected predictions
+longLabel TODO
+visibility full
+type bigWig
+windowingFunction maximum
+
+track K562_DNASE_corrected_count_contribution_scores
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/merged.K562.counts.bw
+shortLabel K562 DNASE corrected count contribution scores
+longLabel TODO
+visibility full
+type bigWig
+logo on
+autoScale on
+alwaysZero on
+
+track K562_DNASE_corrected_profile_contribution_scores
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/merged.K562.profile.bw
+shortLabel K562 DNASE corrected profile contribution scores
+longLabel TODO
+visibility full
+type bigWig
+logo on
+autoScale on
+alwaysZero on
+
+track K562_DNASE_overlap_peak_bed
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/DNASE/peaks.sorted.bed.gz
+shortLabel K562 DNASE overlap peak bed
+longLabel TODO
+visibility full
+type bed
