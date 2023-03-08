@@ -23,4 +23,4 @@ longLabel TODO
 type bigWig 
 logo on
 visibility full
-autoScale on
+autoScale off
