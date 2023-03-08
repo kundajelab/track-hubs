@@ -9,7 +9,7 @@ useOneFile on
 genome hg38
 
 track K562_ATAC_pval_signal
-bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/pval.bigWi
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/chrombpnet/merged/K562/ATAC/pval.bigWig
 shortLabel K562 ATAC pval signal
 longLabel TODO
 type bigWig 
