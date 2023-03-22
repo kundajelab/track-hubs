@@ -1,6 +1,17 @@
 import json
 import argparse
 
+def convert_color(color):
+    if color == 'red':
+        return '255,0,0'
+    elif color == 'green':
+        return '0,255,0'
+    elif color == 'blue':
+        return '0,0,255'
+    else:
+        raise Exception(
+            f"Color {color} not defined. Please add the RGB value to convert_color")
+
 
 def convert_track(track):
     '''
@@ -11,7 +22,8 @@ def convert_track(track):
     new_track.append(['track', '_'.join(track['name'].split())])
     new_track.append(['bigDataUrl', track['url']])
     new_track.append(['shortLabel', track['name']])
-    new_track.append(['longLabel', 'TODO'])
+    new_track.append(['longLabel', ''])
+    new_track.append(['color', convert_color(track['options']['color'])])
     if track['showOnHubLoad']:
         new_track.append(['visibility', 'full'])
     return new_track
@@ -36,6 +48,7 @@ def convert_bigwig_windowing(washu_agg_fn):
 def convert_bigwig(track):
     new_track = convert_track(track)
     new_track.append(['type', 'bigWig'])
+    new_track.append(['maxHeightPixels', '72:48:32'])
     if 'options' in track.keys() and 'aggregateMethod' in track['options'].keys():
         new_track.append(['windowingFunction',
                           convert_bigwig_windowing(track['options']['aggregateMethod'])])
@@ -48,6 +61,7 @@ def convert_dynseq(track):
     new_track.append(['logo', 'on'])
     new_track.append(['autoScale', 'on'])
     new_track.append(['alwaysZero', 'on'])
+    new_track.append(['maxHeightPixels', '72:48:32'])
     return new_track
 
 
@@ -80,11 +94,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Converts WashU DataHub JSON to UCSC TrackDb Textfile')
     parser.add_argument('-i', '--input', help='Input JSON file')
-    parser.add_argument('-o', '--output', help='Output Tet file')
+    parser.add_argument('-o', '--output', help='Output Text file')
     args = parser.parse_args()
 
     with open(args.input) as f:
         data = json.load(f)
 
     output = process_tracks(data)
-    print(output)
+    with open(args.output, 'w') as f:
+        f.write(output)
