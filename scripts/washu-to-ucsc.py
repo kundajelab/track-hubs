@@ -22,7 +22,7 @@ def convert_track(track):
     new_track.append(['track', '_'.join(track['name'].split())])
     new_track.append(['bigDataUrl', track['url']])
     new_track.append(['shortLabel', track['name']])
-    new_track.append(['longLabel', ''])
+    new_track.append(['longLabel', track['name']])
     new_track.append(['color', convert_color(track['options']['color'])])
     if track['showOnHubLoad']:
         new_track.append(['visibility', 'full'])
