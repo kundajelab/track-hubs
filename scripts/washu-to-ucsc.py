@@ -48,6 +48,8 @@ def convert_bigwig_windowing(washu_agg_fn):
 def convert_bigwig(track):
     new_track = convert_track(track)
     new_track.append(['type', 'bigWig'])
+    new_track.append(['autoScale', 'on'])
+    new_track.append(['alwaysZero', 'on'])
     new_track.append(['maxHeightPixels', '72:48:32'])
     if 'options' in track.keys() and 'aggregateMethod' in track['options'].keys():
         new_track.append(['windowingFunction',
