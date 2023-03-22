@@ -1,0 +1,84 @@
+[
+    {
+    "type": "bigwig",
+    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/$mode/$experiment/$experiment.bigWig",
+    "name": "$experiment observed",
+    "showOnHubLoad": false, 
+    "options": {
+        "aggregateMethod": "MAX",
+        "color": "red"
+        },
+    "metadata": {
+        "sample": ["$experiment"],
+        "assay": "$mode"
+        }
+    },
+    {
+    "type": "bigwig",
+    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/$mode/$experiment/$experiment_w_bias.bw",
+    "name": "$experiment $mode uncorrected predictions",
+    "showOnHubLoad": false, 
+    "options": {
+        "aggregateMethod": "MAX",
+        "color": "blue"
+        },
+    "metadata": {
+        "sample": ["$experiment"],
+        "assay": "$mode"
+        }
+    },
+    {
+    "type": "bigwig",
+    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/$mode/$experiment/$experiment_wo_bias.bw",
+    "name": "$experiment $mode corrected predictions",
+    "showOnHubLoad": false,  
+    "options": {
+        "aggregateMethod": "MAX",
+        "color": "blue"
+        },
+    "metadata": {
+        "sample": ["$experiment"],
+        "assay": "$mode"
+        }
+    },
+    {
+    "type": "dynseq",
+    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/$mode/$experiment/full_$experiment.counts.bigwig",
+    "name": "$experiment $mode corrected count contribution scores",
+    "showOnHubLoad": false, 
+    "options": {
+        "color": "green"
+        },
+    "metadata": {
+        "sample": ["$experiment"],
+        "assay": "$mode"
+        }
+    },
+    {
+    "type": "dynseq",
+    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/$mode/$experiment/full_$experiment.profile.bigwig",
+    "name": "$experiment $mode corrected profile contribution scores",
+    "showOnHubLoad": false, 
+    "options": {
+        "color": "green"
+        },
+    "metadata": {
+        "sample": ["$experiment"],
+        "assay": "$mode"
+        }
+    },
+    {
+    "type": "bed",
+    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/$mode/$experiment/ccre_regions_v4_sorted.bed.gz",
+    "name": "$experiment $mode cell-type specfic ccre v4",
+    "showOnHubLoad": false, 
+    "options": {
+        "color": "blue"
+        },
+    "metadata": {
+        "sample": ["$experiment"],
+        "assay": "$mode"
+        }
+    }
+]
+
