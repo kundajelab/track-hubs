@@ -15,7 +15,7 @@ args = None
 
 if not os.path.exists('logs'):
     os.makedirs('logs')
-logging.basicConfig(filename=LOG_PATH, filemode='w', format='%(levelname)s: %(message)s\n\n')
+logging.basicConfig(filename=LOG_PATH, filemode='w', format='%(levelname)s: %(message)s\n\n', level=logging.INFO)
 
 print(f"Logging to {LOG_PATH}")
 
