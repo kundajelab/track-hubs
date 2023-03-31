@@ -1,7 +1,7 @@
 [
     {
     "type": "bigwig",
-    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/$mode/$experiment/$experiment.bigWig",
+    "url": "https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/$mode/$experiment/preprocessing/bigWigs/$experiment.bigWig",
     "name": "$experiment observed",
     "showOnHubLoad": false, 
     "options": {

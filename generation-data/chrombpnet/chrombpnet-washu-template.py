@@ -6,7 +6,7 @@ import logging
 import pandas as pd
 
 TEMPLATE_PATH = 'generation-data/chrombpnet/chrombpnet-washu-template.json'
-CHROMBPNET_PATH = '/oak/stanford/groups/akundaje/projects/chromatin-atlas-2022/bigwigs'
+CHROMBPNET_PATH = '/oak/stanford/groups/akundaje/projects/chromatin-atlas-2022/'
 LOG_PATH = 'logs/chrombpnet-log.txt'
 atac_metadata = pd.read_csv('generation-data/encode-reports/atac_metadata.tsv', sep="\t",skiprows=1)
 dnase_metadata = pd.read_csv('generation-data/encode-reports/dnase_metadata.tsv', sep="\t",skiprows=1)
@@ -20,14 +20,8 @@ logging.basicConfig(filename=LOG_PATH, filemode='w', format='%(levelname)s: %(me
 print(f"Logging to {LOG_PATH}")
 
 def check_files_exist(exp_id, files, mode):
-    dir = osp.join(CHROMBPNET_PATH,
-                   mode,
-                   exp_id,
-                   )
-    # TODO: remove when ATAC fold 0 tracks are available
-    subdir = lambda file: 'chrombpnet_model_feb15_fold_1' if \
-        mode == 'ATAC' and file != f"{exp_id}.bigWig" else ''
-    file_paths = [osp.join(dir, subdir(file), file) for file in files]
+    transform_filepath = lambda file: file.replace('https://mitra.stanford.edu/kundaje/oak', '/oak/stanford/groups/akundaje')
+    file_paths = [transform_filepath(file) for file in files]
     files_exist = [osp.isfile(file) for file in file_paths]
     all_files_exist = all(files_exist)
     if not all_files_exist:
@@ -61,7 +55,7 @@ def construct_exp_tracks(exp_id, mode):
         track['metadata']['biosample summary'] = metadata_row.at[0, 'Biosample summary']
         track['metadata']['biosample term name'] = metadata_row.at[0, 'Biosample term name']
         track['metadata']['life stage'] = metadata_row.at[0, 'Life stage']
-    template_files = [osp.basename(track['url']) for track in tracks]
+    template_files = [track['url'] for track in tracks]
     files_exist = check_files_exist(exp_id, template_files, mode)
     if files_exist:
         return tracks
