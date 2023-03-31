@@ -1,0 +1,139 @@
+hub chrombpnet
+shortLabel ChromBPNet
+longLabel TODO
+genomesFile genomes.txt
+email riyasinh@stanford.edu
+descriptionUrl TODO
+useOneFile on
+
+genome hg38
+
+track ENCSR499ASS
+superTrack on
+shortLabel ENCSR499ASS
+longLabel ENCSR499ASS
+
+track ENCSR499ASS_observed
+parent ENCSR499ASS
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/ATAC/ENCSR499ASS/preprocessing/bigWigs/ENCSR499ASS.bigWig
+shortLabel ENCSR499ASS observed
+longLabel ENCSR499ASS observed
+color 255,0,0
+type bigWig
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+windowingFunction maximum
+
+track ENCSR499ASS_ATAC_uncorrected_predictions
+parent ENCSR499ASS
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR499ASS/chrombpnet_model_feb15_fold_1/ENCSR499ASS_w_bias.bw
+shortLabel ENCSR499ASS ATAC uncorrected predictions
+longLabel ENCSR499ASS ATAC uncorrected predictions
+color 0,0,255
+type bigWig
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+windowingFunction maximum
+
+track ENCSR499ASS_ATAC_corrected_predictions
+parent ENCSR499ASS
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR499ASS/chrombpnet_model_feb15_fold_1/ENCSR499ASS_wo_bias.bw
+shortLabel ENCSR499ASS ATAC corrected predictions
+longLabel ENCSR499ASS ATAC corrected predictions
+color 0,0,255
+type bigWig
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+windowingFunction maximum
+
+track ENCSR499ASS_ATAC_corrected_count_contribution_scores
+parent ENCSR499ASS
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR499ASS/chrombpnet_model_feb15_fold_1/full_ENCSR499ASS.counts.bigwig
+shortLabel ENCSR499ASS ATAC corrected count contribution scores
+longLabel ENCSR499ASS ATAC corrected count contribution scores
+color 0,255,0
+type bigWig
+logo on
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+
+track ENCSR499ASS_ATAC_corrected_profile_contribution_scores
+parent ENCSR499ASS
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR499ASS/chrombpnet_model_feb15_fold_1/full_ENCSR499ASS.profile.bigwig
+shortLabel ENCSR499ASS ATAC corrected profile contribution scores
+longLabel ENCSR499ASS ATAC corrected profile contribution scores
+color 0,255,0
+type bigWig
+logo on
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+
+track ENCSR182EZJ
+superTrack on
+shortLabel ENCSR182EZJ
+longLabel ENCSR182EZJ
+
+track ENCSR182EZJ_observed
+parent ENCSR182EZJ
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/ATAC/ENCSR182EZJ/preprocessing/bigWigs/ENCSR182EZJ.bigWig
+shortLabel ENCSR182EZJ observed
+longLabel ENCSR182EZJ observed
+color 255,0,0
+type bigWig
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+windowingFunction maximum
+
+track ENCSR182EZJ_ATAC_uncorrected_predictions
+parent ENCSR182EZJ
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR182EZJ/chrombpnet_model_feb15_fold_1/ENCSR182EZJ_w_bias.bw
+shortLabel ENCSR182EZJ ATAC uncorrected predictions
+longLabel ENCSR182EZJ ATAC uncorrected predictions
+color 0,0,255
+type bigWig
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+windowingFunction maximum
+
+track ENCSR182EZJ_ATAC_corrected_predictions
+parent ENCSR182EZJ
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR182EZJ/chrombpnet_model_feb15_fold_1/ENCSR182EZJ_wo_bias.bw
+shortLabel ENCSR182EZJ ATAC corrected predictions
+longLabel ENCSR182EZJ ATAC corrected predictions
+color 0,0,255
+type bigWig
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+windowingFunction maximum
+
+track ENCSR182EZJ_ATAC_corrected_count_contribution_scores
+parent ENCSR182EZJ
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR182EZJ/chrombpnet_model_feb15_fold_1/full_ENCSR182EZJ.counts.bigwig
+shortLabel ENCSR182EZJ ATAC corrected count contribution scores
+longLabel ENCSR182EZJ ATAC corrected count contribution scores
+color 0,255,0
+type bigWig
+logo on
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
+
+track ENCSR182EZJ_ATAC_corrected_profile_contribution_scores
+parent ENCSR182EZJ
+bigDataUrl https://mitra.stanford.edu/kundaje/oak/projects/chromatin-atlas-2022/bigwigs/ATAC/ENCSR182EZJ/chrombpnet_model_feb15_fold_1/full_ENCSR182EZJ.profile.bigwig
+shortLabel ENCSR182EZJ ATAC corrected profile contribution scores
+longLabel ENCSR182EZJ ATAC corrected profile contribution scores
+color 0,255,0
+type bigWig
+logo on
+autoScale on
+alwaysZero on
+maxHeightPixels 72:48:32
