@@ -24,6 +24,7 @@ autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
 windowingFunction maximum
+visibility full
 
 track ENCSR499ASS_ATAC_uncorrected_predictions
 parent ENCSR499ASS
@@ -36,6 +37,7 @@ autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
 windowingFunction maximum
+visibility full
 
 track ENCSR499ASS_ATAC_corrected_predictions
 parent ENCSR499ASS
@@ -48,6 +50,7 @@ autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
 windowingFunction maximum
+visibility full
 
 track ENCSR499ASS_ATAC_corrected_count_contribution_scores
 parent ENCSR499ASS
@@ -60,6 +63,7 @@ logo on
 autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
+visibility full
 
 track ENCSR499ASS_ATAC_corrected_profile_contribution_scores
 parent ENCSR499ASS
@@ -72,6 +76,7 @@ logo on
 autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
+visibility full
 
 track ENCSR182EZJ
 superTrack on
@@ -89,6 +94,7 @@ autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
 windowingFunction maximum
+visibility full
 
 track ENCSR182EZJ_ATAC_uncorrected_predictions
 parent ENCSR182EZJ
@@ -101,6 +107,7 @@ autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
 windowingFunction maximum
+visibility full
 
 track ENCSR182EZJ_ATAC_corrected_predictions
 parent ENCSR182EZJ
@@ -113,6 +120,7 @@ autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
 windowingFunction maximum
+visibility full
 
 track ENCSR182EZJ_ATAC_corrected_count_contribution_scores
 parent ENCSR182EZJ
@@ -125,6 +133,7 @@ logo on
 autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
+visibility full
 
 track ENCSR182EZJ_ATAC_corrected_profile_contribution_scores
 parent ENCSR182EZJ
@@ -137,3 +146,4 @@ logo on
 autoScale on
 alwaysZero on
 maxHeightPixels 72:48:32
+visibility full
